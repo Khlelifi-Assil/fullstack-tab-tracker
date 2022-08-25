@@ -2,10 +2,6 @@
 
 > A Nuxt, Express, MongoDB project based on the the Fullstack Tab Tracker from Free Code Camp Vue fullstack series.
 
-## Deployed link
-
-<https://comming_soon_maybe>
-
 ### The stack on the FrontEnd is based on
 
 1. Nuxt
@@ -41,8 +37,6 @@ JWT_SECRET='WRITE_A_RANDOM_TOKEN_YOU_WOULD_LIKE_USED_FOR_AUTH'
 PORT=3000
 
 ```
-
-![picture 01]()
 
 Backend
 
