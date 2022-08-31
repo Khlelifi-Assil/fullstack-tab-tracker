@@ -17,65 +17,31 @@
           <busy-overlay />
           <form @keydown.enter="signUp">
             <b-form-group label="Username">
-              <b-input
-                ref="userName"
-                v-model="userName"
-                placeholder="Username"
-                required
-                name="userName"
-              />
+              <b-input ref="userName" v-model="userName" placeholder="Username" required name="userName" />
             </b-form-group>
 
-            <b-form-group
-              label="Email"
-              description="We'll never share your email with anyone else."
-            >
-              <b-input
-                ref="email"
-                v-model="email"
-                placeholder="Email address"
-                required
-                name="email"
-              />
+            <b-form-group label="Email" description="We'll never share your email with anyone else.">
+              <b-input ref="email" v-model="email" placeholder="Email address" required name="email" />
             </b-form-group>
 
             <b-form-group label="Password">
               <b-input-group>
                 <b-input-group-prepend is-text class="clickable">
-                  <b-icon
-                    :icon="passwordIcon"
-                    font-scale="1.5"
-                    @click="hidePassword = !hidePassword"
-                  >
+                  <b-icon :icon="passwordIcon" font-scale="1.5" @click="hidePassword = !hidePassword">
                   </b-icon>
                 </b-input-group-prepend>
-                <b-input
-                  v-model="password"
-                  :type="passwordType"
-                  placeholder="password"
-                  required
-                  name="password"
-                />
+                <b-input v-model="password" :type="passwordType" placeholder="password" required name="password" />
               </b-input-group>
             </b-form-group>
 
             <b-form-group label="Confirm password">
               <b-input-group>
                 <b-input-group-prepend is-text class="clickable">
-                  <b-icon
-                    :icon="passwordIcon"
-                    font-scale="1.5"
-                    @click="hidePassword = !hidePassword"
-                  >
+                  <b-icon :icon="passwordIcon" font-scale="1.5" @click="hidePassword = !hidePassword">
                   </b-icon>
                 </b-input-group-prepend>
-                <b-input
-                  v-model="repeat_password"
-                  :type="passwordType"
-                  placeholder="Confirm password"
-                  required
-                  name="repeat_password"
-                />
+                <b-input v-model="repeat_password" :type="passwordType" placeholder="Confirm password" required
+                  name="repeat_password" />
               </b-input-group>
             </b-form-group>
 

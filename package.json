@@ -1,8 +1,8 @@
 {
-  "name": "fullstack-tab-tracker",
-  "version": "1.0.0",
-  "description": "My first-class Nuxt.js project",
-  "author": "Neni Emmanuel",
+  "name": "tab-tracker",
+  "version": "1.0",
+  "description": "Nuxt.js project",
+  "author": "Khelifi Assil",
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",

@@ -20,12 +20,7 @@
                     <th scope="col">Action</th>
                   </tr>
                 </thead>
-                <div
-                  v-if="usersLoading"
-                  class="spinner-border"
-                  style="width: 3rem; height: 3rem"
-                  role="status"
-                ></div>
+                <div v-if="usersLoading" class="spinner-border" style="width: 3rem; height: 3rem" role="status"></div>
                 <tbody v-else>
                   <tr v-for="(user, index) in allUsers" :key="user._id">
                     <td>{{ index + 1 }}</td>
@@ -44,10 +39,7 @@
                       </button>
                     </td>
                     <td>
-                      <button
-                        class="btn btn-danger"
-                        @click="deleteUser(user._id)"
-                      >
+                      <button class="btn btn-danger" @click="deleteUser(user._id)">
                         Delete
                       </button>
                     </td>

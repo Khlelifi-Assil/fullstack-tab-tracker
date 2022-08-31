@@ -16,31 +16,16 @@
           <busy-overlay />
           <form>
             <b-form-group label="Email">
-              <b-input
-                ref="email"
-                v-model="email"
-                autofocus
-                placeholder="Email address"
-              />
+              <b-input ref="email" v-model="email" autofocus placeholder="Email address" />
             </b-form-group>
 
             <b-form-group label="Password">
               <b-input-group>
                 <b-input-group-prepend is-text class="clickable">
-                  <b-icon
-                    :icon="passwordIcon"
-                    font-scale="1.5"
-                    @click="hidePassword = !hidePassword"
-                  >
+                  <b-icon :icon="passwordIcon" font-scale="1.5" @click="hidePassword = !hidePassword">
                   </b-icon>
                 </b-input-group-prepend>
-                <b-input
-                  v-model="password"
-                  :type="passwordType"
-                  placeholder="password"
-                  required
-                  name="password"
-                />
+                <b-input v-model="password" :type="passwordType" placeholder="password" required name="password" />
               </b-input-group>
             </b-form-group>
 
